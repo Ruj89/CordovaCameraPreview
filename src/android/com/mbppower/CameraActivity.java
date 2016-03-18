@@ -422,6 +422,7 @@ public class CameraActivity extends Fragment {
 						    pictureView.setImageBitmap(null);
 					    }
 				    });
+					e.printStackTrace();
 			    }
 		    }
 	    }.start();
@@ -456,6 +457,7 @@ public class CameraActivity extends Fragment {
                 return pictureFile;
             }
             catch (Exception ex) {
+				ex.printStackTrace();
             }
         }
         return null;
